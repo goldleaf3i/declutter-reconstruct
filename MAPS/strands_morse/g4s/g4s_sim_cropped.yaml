@@ -1,0 +1,6 @@
+free_thresh: 0.196
+image: g4s_sim_cropped.pgm
+negate: 0
+occupied_thresh: 0.65
+origin: [-9.549999999999997, -21.799999999999997, 0.0]
+resolution: 0.05

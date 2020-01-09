@@ -1,0 +1,3291 @@
+- meta:
+    map: UMIc_first_floor
+    node: ChargingPoint
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: undocking
+      edge_id: ChargingPoint_Station
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: Station
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: "{\"topic\":\"/battery_state\",\"field\":\"charging\", \"val\": true}"
+    map: UMIc_first_floor
+    name: ChargingPoint
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 1.0
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+    verts:
+    - x: 0.25
+      y: 0.689999997616
+    - x: -0.0217320006341
+      y: 0.686251997948
+    - x: -0.424313008785
+      y: 0.526346981525
+    - x: -0.516050994396
+      y: -0.431477993727
+    - x: -0.0680480003357
+      y: -0.675751984119
+    - x: 0.25
+      y: -0.689999997616
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint4
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint4_WayPoint5
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint4
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.88809722749
+        x: 0.0
+        y: 0.0
+        z: -0.459655647768
+      position:
+        x: -10.3014857739
+        y: -1.21653530768
+        z: 1.50228329776e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: Station
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: docking
+      edge_id: Station_ChargingPoint
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: ChargingPoint
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: Station_WayPoint1
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: Station_WayPoint34
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: Station
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 1.0
+        x: 0.0
+        y: 0.0
+        z: 0.0
+      position:
+        x: -1.57624900341
+        y: 0.0
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint1
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint1_Station
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: Station
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint1_WayPoint2
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint1
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: -0.058437484996
+        x: 0.0
+        y: 0.0
+        z: 0.998291069953
+      position:
+        x: -3.71106041219
+        y: 0.60032197469
+        z: 3.5543817889e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint2
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint2_WayPoint1
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint2_WayPoint3
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint2_WayPoint5
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint2_WayPoint6
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint2
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.999091600675
+        x: 0.0
+        y: 0.0
+        z: 0.0426142401194
+      position:
+        x: -4.70619595227
+        y: 0.610561581748
+        z: -2.04031089246e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint3
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint3_WayPoint2
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint3_WayPoint5
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint3_WayPoint6
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint3
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.918279970356
+        x: 0.0
+        y: 0.0
+        z: -0.395931681029
+      position:
+        x: -5.76673400794
+        y: -0.785498742297
+        z: -3.57945659224e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint5
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint5_WayPoint2
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint5_WayPoint3
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint5_WayPoint4
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint4
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint5_WayPoint6
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint5
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.99205188688
+        x: 0.0
+        y: 0.0
+        z: -0.12582946292
+      position:
+        x: -7.98979241409
+        y: 0.264651567643
+        z: 1.00983976736e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint11
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint11_WayPoint9
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint11_WayPoint10
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint11
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.999627912848
+        x: 0.0
+        y: 0.0
+        z: -0.027277020629
+      position:
+        x: -3.85484756909
+        y: 9.4342159656
+        z: -1.35042491078e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint12
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint12_WayPoint7
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint12_WayPoint9
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint12_WayPoint13
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint12_WayPoint15
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint12
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.692108675935
+        x: 0.0
+        y: 0.0
+        z: 0.721793308846
+      position:
+        x: -9.59100320376
+        y: 6.44932785977
+        z: 1.46054153494e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint6
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint6_WayPoint2
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint6_WayPoint3
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint6_WayPoint5
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint6_WayPoint7
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint6
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.672452487287
+        x: 0.0
+        y: 0.0
+        z: 0.740140292337
+      position:
+        x: -7.46305367028
+        y: 1.5470768134
+        z: -2.00963690133e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint7
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint7_WayPoint6
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint7_WayPoint9
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint7_WayPoint12
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint7
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.756914606291
+        x: 0.0
+        y: 0.0
+        z: -0.653513793873
+      position:
+        x: -7.65112408245
+        y: 5.20891921503
+        z: -8.1101653171e-12
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint8
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint8_WayPoint9
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint8
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.668266033415
+        x: 0.0
+        y: 0.0
+        z: -0.743922380752
+      position:
+        x: -3.84060580628
+        y: 6.33957466473
+        z: -3.56632431919e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint9
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint9_WayPoint7
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint9_WayPoint8
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint8
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint9_WayPoint10
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint9_WayPoint11
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint11
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint9_WayPoint12
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint9
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.727266252842
+        x: 0.0
+        y: 0.0
+        z: 0.686355445434
+      position:
+        x: -4.89702005366
+        y: 6.50894916039
+        z: 1.61067779947e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint10
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint10_WayPoint9
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint10_WayPoint11
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint11
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint10
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.0939763991447
+        x: 0.0
+        y: 0.0
+        z: 0.995574425346
+      position:
+        x: -5.07799609777
+        y: 9.03797351355
+        z: -1.95464909536e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint13
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint13_WayPoint12
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint13_WayPoint14
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint14
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint13
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.694583568443
+        x: 0.0
+        y: 0.0
+        z: -0.719412028291
+      position:
+        x: -9.74646529598
+        y: 7.76794899169
+        z: -8.92042828493e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint14
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint14_WayPoint13
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint14
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.537242507198
+        x: 0.0
+        y: 0.0
+        z: 0.843427820539
+      position:
+        x: -8.28942817929
+        y: 7.93729248706
+        z: 1.26368181197e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint20
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint20_WayPoint19
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint19
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint20
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.295318367641
+        x: 0.0
+        y: 0.0
+        z: 0.955398901891
+      position:
+        x: -23.6333927735
+        y: 7.46247846058
+        z: -1.35694164238e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint19
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint19_WayPoint18
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: ''
+      inflation_radius: 0.0
+      map_2d: ''
+      node: WayPoint20
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint19
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.998978120537
+        x: 0.0
+        y: 0.0
+        z: 0.045196401287
+      position:
+        x: -21.4821775152
+        y: 6.44884252017
+        z: 3.68992586486e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint28
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint28_WayPoint27
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint27
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint28_WayPoint29
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint29
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint28
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.584999007045
+        x: 0.0
+        y: 0.0
+        z: 0.811034007768
+      position:
+        x: -24.4391320157
+        y: 0.331119493785
+        z: -4.57483134708e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint29
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint29_WayPoint28
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint28
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint29
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.966554445417
+        x: 0.0
+        y: 0.0
+        z: -0.25646150597
+      position:
+        x: -25.360867537
+        y: -1.25461739911
+        z: -1.04802426459e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint16
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint16_WayPoint15
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint16
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.686136415693
+        x: 0.0
+        y: 0.0
+        z: -0.727472899193
+      position:
+        x: -14.5839988182
+        y: 7.50581355199
+        z: 1.6995854446e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint15
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint15_WayPoint12
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint15_WayPoint16
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint16
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint15_WayPoint17
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint15
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.673809411746
+        x: 0.0
+        y: 0.0
+        z: 0.738905187857
+      position:
+        x: -14.1465432999
+        y: 6.44961824505
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint17
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint17_WayPoint15
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint17_WayPoint18
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint17_WayPoint21
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint17
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.694914763378
+        x: 0.0
+        y: 0.0
+        z: 0.719092116241
+      position:
+        x: -19.0405891813
+        y: 6.31459349834
+        z: -1.17252102472e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint22
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint22_WayPoint21
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint22_WayPoint23
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint23
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint22_WayPoint24
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint24
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint22
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.99916694489
+        x: 0.0
+        y: 0.0
+        z: 0.0408095116281
+      position:
+        x: -21.4131311135
+        y: 3.88871527267
+        z: -1.30963408174e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint21
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint21_WayPoint17
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint21_WayPoint18
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint21_WayPoint22
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint22
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint21_WayPoint24
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint24
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint21
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.0062044617442
+        x: 0.0
+        y: 0.0
+        z: 0.999980752142
+      position:
+        x: -20.402577954
+        y: 4.08229946049
+        z: 1.95086259647e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint24
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint24_WayPoint21
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint24_WayPoint22
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint22
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint24_WayPoint25
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint24
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.736188927737
+        x: 0.0
+        y: 0.0
+        z: -0.67677608016
+      position:
+        x: -20.1495886409
+        y: 2.89297149441
+        z: 2.89791940444e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint23
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint23_WayPoint22
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint22
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint23
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.863071769772
+        x: 0.0
+        y: 0.0
+        z: -0.505081300607
+      position:
+        x: -24.0771278144
+        y: 4.46347773454
+        z: -3.353293615e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint31
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint31_WayPoint25
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint31_WayPoint30
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint30
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint31_WayPoint32
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint31
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.99978842648
+        x: 0.0
+        y: 0.0
+        z: -0.0205694500834
+      position:
+        x: -17.5641878173
+        y: 0.483763298496
+        z: -1.85870512037e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint18
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint18_WayPoint17
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint18_WayPoint19
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint19
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint18_WayPoint21
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint18
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: -0.0111501362327
+        x: 0.0
+        y: 0.0
+        z: 0.999937835299
+      position:
+        x: -20.5301682878
+        y: 6.46107557683
+        z: 8.8632823303e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint25
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint25_WayPoint24
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint24
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint25_WayPoint26
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint26
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint25_WayPoint30
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint30
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint25_WayPoint31
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint25
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.720365909609
+        x: 0.0
+        y: 0.0
+        z: 0.693594230277
+      position:
+        x: -19.9544082478
+        y: 1.53134873301
+        z: 8.26759494199e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint30
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint30_WayPoint25
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint30_WayPoint26
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint26
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint30_WayPoint31
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint30
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.736954681398
+        x: 0.0
+        y: 0.0
+        z: -0.675942155488
+      position:
+        x: -19.3972152023
+        y: 0.196785199147
+        z: 9.07393674088e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint32
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint32_WayPoint31
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint32_WayPoint33
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint33
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint32
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.0479198095227
+        x: 0.0
+        y: 0.0
+        z: 0.998851186041
+      position:
+        x: -15.6831236611
+        y: 0.570171817043
+        z: -4.47498982314e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint26
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint26_WayPoint25
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint26_WayPoint27
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint27
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint26_WayPoint30
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint30
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint26
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: -0.067410004618
+        x: 0.0
+        y: 0.0
+        z: 0.997725358642
+      position:
+        x: -20.6969712789
+        y: 0.807001342677
+        z: -1.31678140614e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint27
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint27_WayPoint26
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint26
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint27_WayPoint28
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint28
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint27
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.998407864325
+        x: 0.0
+        y: 0.0
+        z: 0.0564068830417
+      position:
+        x: -21.9279734906
+        y: 0.710939597179
+        z: -1.39810014954e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint33
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint33_WayPoint32
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint33
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.797572726001
+        x: 0.0
+        y: 0.0
+        z: -0.603222800249
+      position:
+        x: -14.057331566
+        y: -0.50216040779
+        z: -9.58136528451e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint34
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint34_Station
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: Station
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint34_WayPoint35
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint34_WayPoint36
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint34
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: -0.0626598820128
+        x: 0.0
+        y: 0.0
+        z: 0.99803493886
+      position:
+        x: 0.95513436389
+        y: 1.35081523637
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint35
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint35_WayPoint34
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint35_WayPoint36
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint35
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.730438427166
+        x: 0.0
+        y: 0.0
+        z: -0.682978553191
+      position:
+        x: 2.69371118858
+        y: 0.0852472613875
+        z: 9.01765745409e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint36
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint36_WayPoint34
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint36_WayPoint35
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint36_WayPoint37
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint37
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint36
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.997529181531
+        x: 0.0
+        y: 0.0
+        z: 0.0702533415178
+      position:
+        x: 4.47114138596
+        y: 0.789381452815
+        z: 4.37962235922e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint39
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint39_WayPoint37
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint37
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint39_WayPoint38
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint38
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint39_WayPoint40
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint39
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.999609555766
+        x: 0.0
+        y: 0.0
+        z: 0.0279416538752
+      position:
+        x: 9.282297446
+        y: 0.902073213982
+        z: 1.55889856579e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint38
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint38_WayPoint37
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint37
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint38_WayPoint39
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint38
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.702129571425
+        x: 0.0
+        y: 0.0
+        z: -0.7120492012
+      position:
+        x: 7.64836029954
+        y: 0.358782240091
+        z: -7.34226096588e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint37
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint37_WayPoint36
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint37_WayPoint38
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint38
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint37_WayPoint39
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint37
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.022435149649
+        x: 0.0
+        y: 0.0
+        z: 0.999748300354
+      position:
+        x: 5.61308337596
+        y: 0.906306066885
+        z: -2.17604032016e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint41
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint41_WayPoint40
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint41_WayPoint42
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint42
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint41_WayPoint43
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint43
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint41
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.732495414402
+        x: 0.0
+        y: 0.0
+        z: 0.68077196467
+      position:
+        x: 11.6815807284
+        y: 1.69526904851
+        z: 2.69532632324e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint42
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint42_WayPoint40
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint42_WayPoint41
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint42
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.6722559753
+        x: 0.0
+        y: 0.0
+        z: -0.740318785168
+      position:
+        x: 12.6630725541
+        y: 0.835629430467
+        z: 2.07021951804e-08
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint43
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint43_WayPoint41
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint43_WayPoint44
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint44
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint43
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.714925682118
+        x: 0.0
+        y: 0.0
+        z: -0.699200449834
+      position:
+        x: 11.654884
+        y: 2.67358702628
+        z: -1.38777878078e-17
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint44
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint44_WayPoint43
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint43
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint44_WayPoint45
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint45
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint44
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.999921381595
+        x: 0.0
+        y: 0.0
+        z: 0.0125391638098
+      position:
+        x: 11.4225493216
+        y: 4.19334879243
+        z: -1.90998974969e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint40
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint40_WayPoint39
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint40_WayPoint41
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint40_WayPoint42
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint42
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint40
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.0759647554327
+        x: 0.0
+        y: 0.0
+        z: 0.997110503371
+      position:
+        x: 10.7726528716
+        y: 0.917821823571
+        z: 1.44744963237e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint45
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint45_WayPoint44
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint44
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint45_WayPoint46
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint46
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint45_WayPoint47
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint47
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint45
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.717783537892
+        x: 0.0
+        y: 0.0
+        z: 0.696266323134
+      position:
+        x: 12.9808702361
+        y: 6.35801360679
+        z: -4.25794552394e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint46
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint46_WayPoint45
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint45
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint46
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.683366083277
+        x: 0.0
+        y: 0.0
+        z: 0.730075883882
+      position:
+        x: 8.52160152825
+        y: 6.49911203578
+        z: -2.16400880548e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint51
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint51_WayPoint50
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint50
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint51
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.959929348121
+        x: 0.0
+        y: 0.0
+        z: 0.280242121415
+      position:
+        x: 27.2798422348
+        y: 7.95361014882
+        z: -9.29590335264e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint47
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint47_WayPoint45
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint45
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint47_WayPoint48
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint48
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint47
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.714571931149
+        x: 0.0
+        y: 0.0
+        z: -0.699561973819
+      position:
+        x: 16.3433132311
+        y: 6.5569079414
+        z: 1.25700852505e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint56
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint56_WayPoint55
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint56
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.673460937356
+        x: 0.0
+        y: 0.0
+        z: -0.73922281205
+      position:
+        x: 17.2702142689
+        y: 1.23587522729
+        z: -8.66015731349e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint50
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint50_WayPoint49
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint49
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint50_WayPoint51
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint51
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint50
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.0316329454245
+        x: 0.0
+        y: 0.0
+        z: 0.999499553158
+      position:
+        x: 24.8453622334
+        y: 6.61660416545
+        z: 6.60221599613e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint49
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint49_WayPoint48
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint48
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint49_WayPoint50
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint50
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint49_WayPoint52
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint52
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint49
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.99688986613
+        x: 0.0
+        y: 0.0
+        z: -0.078807327116
+      position:
+        x: 23.5480150203
+        y: 6.63288305614
+        z: -8.33020818991e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint53
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint53_WayPoint52
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint52
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint53
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.066320372416
+        x: 0.0
+        y: 0.0
+        z: 0.997798380537
+      position:
+        x: 23.4408364897
+        y: 4.11153380271
+        z: 1.66081288999e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint48
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint48_WayPoint47
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint47
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint48_WayPoint49
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint49
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint48_WayPoint52
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint52
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint48
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.717354042729
+        x: 0.0
+        y: 0.0
+        z: 0.696708818216
+      position:
+        x: 21.3391994265
+        y: 6.46303703771
+        z: -1.38777878078e-17
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint52
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint52_WayPoint48
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint48
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint52_WayPoint49
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint49
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint52_WayPoint53
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint53
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint52_WayPoint54
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint54
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint52
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.998111620886
+        x: 0.0
+        y: 0.0
+        z: -0.0614263156288
+      position:
+        x: 22.0986857353
+        y: 4.24278229256
+        z: 4.9135873148e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint54
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint54_WayPoint52
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint52
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint54_WayPoint55
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint54
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.688593418643
+        x: 0.0
+        y: 0.0
+        z: -0.725147642761
+      position:
+        x: 22.0521484194
+        y: 3.26283990376
+        z: -1.02404952573e-09
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint55
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint55_WayPoint54
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint54
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint55_WayPoint56
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint55_WayPoint57
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint57
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint55
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.629999341599
+        x: 0.0
+        y: 0.0
+        z: 0.776595666731
+      position:
+        x: 21.9782396946
+        y: 1.7733104956
+        z: -6.91704749034e-11
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1
+- meta:
+    map: UMIc_first_floor
+    node: WayPoint57
+    pointset: UMIC_FF
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint57_WayPoint55
+      inflation_radius: 0.0
+      map_2d: UMIc_first_floor
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: UMIc_first_floor
+    name: WayPoint57
+    pointset: UMIC_FF
+    pose:
+      orientation:
+        w: 0.740601062084
+        x: 0.0
+        y: 0.0
+        z: -0.671944987957
+      position:
+        x: 26.457637749
+        y: 0.870944195247
+        z: -9.86114148671e-10
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.3
+    yaw_goal_tolerance: 0.1

@@ -1,0 +1,6 @@
+image: UMA_236.pgm
+resolution: 0.050000
+origin: [-8.325000, -46.575000, 0.000000]   #The 2-D pose of the lower-left pixel in the map
+occupied_thresh: 0.65
+free_thresh: 0.196
+negate: 0

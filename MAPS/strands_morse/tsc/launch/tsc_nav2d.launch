@@ -1,0 +1,18 @@
+<launch>
+  <!-- declare arg to be passed in -->
+  <arg name="env" default="tsc"/> 
+  <arg name="with_chest_xtion" default="false"/>
+  <arg name="with_no_go_map" default="true"/>
+  <arg name="no_go_map" default="$(find strands_morse)/tsc/maps/tsc_nogo.yaml"/>
+
+  <!-- 2D Navigation -->
+  <include file="$(find strands_movebase)/launch/movebase.launch">
+      <arg name="map" value="$(find strands_morse)/tsc/maps/$(arg env).yaml"/>
+      <arg name="with_chest_xtion" value="$(arg with_chest_xtion)"/>
+      <arg name="with_no_go_map" value="$(arg with_no_go_map)"/>
+      <arg name="no_go_map" value="$(arg no_go_map)"/>
+  </include>
+  
+  <!--<node name="static_transform_publisher" pkg="tf" type="static_transform_publisher" args="-11 -2.5 0.1 0 0 3.141592 0 /world /map 100"/>-->
+   
+</launch>

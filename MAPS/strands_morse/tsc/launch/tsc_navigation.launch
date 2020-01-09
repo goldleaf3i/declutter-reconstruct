@@ -1,0 +1,28 @@
+<launch>
+  <arg name="topological_map" default="tsc2015"/>
+  <arg name="mon_nav_config_file" default=""/>
+  <arg name="with_human_aware" default="true"/>
+  <arg name="positionUpdate" default="false"/>
+ 
+  <!-- Door passing and door checking servers -->
+  <include file="$(find door_pass)/launch/door_passing.launch"/>
+
+  <include file="$(find scitos_docking)/launch/charging.launch">
+    <arg name="positionUpdate"  value="$(arg positionUpdate)"/>
+  </include>
+  
+  
+  <!--- Topological Navigation (includes monitored_navigation) -->
+  <include file="$(find topological_navigation)/launch/topological_navigation.launch">
+    <arg name="map" value="$(arg topological_map)"/>
+    <arg name="mon_nav_config_file" value="$(arg mon_nav_config_file)"/>
+  </include>
+
+  <node name="odometry_mileage" pkg="odometry_mileage" type="odometry_mileage"/>
+
+  <group if="$(arg with_human_aware)">
+    <node name="gaze_at_pose" pkg="strands_gazing" type="gaze_at_pose"/>
+    <node name="pose_extractor" pkg="pose_extractor" type="extract_last_pose_from_path.py"/>
+    <include file="$(find strands_human_aware_navigation)/launch/human_aware_navigation.launch"/>
+  </group>
+</launch>

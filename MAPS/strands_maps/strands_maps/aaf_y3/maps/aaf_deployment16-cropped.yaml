@@ -1,0 +1,6 @@
+free_thresh: 0.196
+image: aaf_deployment16-cropped.pgm
+negate: 0
+occupied_thresh: 0.65
+origin: [-47.949999999999996, -79.65, 0.0]
+resolution: 0.05

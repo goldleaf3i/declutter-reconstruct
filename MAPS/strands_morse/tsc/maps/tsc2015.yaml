@@ -1,0 +1,4036 @@
+- meta:
+    map: tsc2015
+    node: ChargingPoint
+    pointset: tsc2015
+  node:
+    edges:
+    - action: undocking
+      edge_id: ChargingPoint_Station
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: Station
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: '{"topic": "/battery_state", "field": "charging", "val": true,"localise_anywhere": false}'
+    map: tsc2015
+    name: ChargingPoint
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.826830923557
+        x: -1.37911541742e-07
+        y: -1.88479845065e-08
+        z: 0.56245046854
+      position:
+        x: -16.8136482239
+        y: 8.3299074173
+        z: 0.0
+    verts:
+    - x: 0.184320449829
+      y: -0.500324726105
+    - x: 0.645366668701
+      y: -0.421455383301
+    - x: 0.788249969482
+      y: -0.0838003158569
+    - x: -0.78826713562
+      y: 0.385226249695
+    - x: -0.849599838257
+      y: 0.0368251800537
+    - x: -0.451770782471
+      y: -0.295094490051
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: ChargingPoint2
+    pointset: tsc2015
+  node:
+    edges:
+    - action: undocking
+      edge_id: ChargingPoint2_Station2
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: Station2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: '{"topic": "/battery_state", "field": "charging", "val": true, "localise_anywhere": false}'
+    map: tsc2015
+    name: ChargingPoint2
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.153523951769
+        x: -1.40530914905e-07
+        y: 6.60165113686e-08
+        z: 0.988144934177
+      position:
+        x: -26.8040523529
+        y: -35.3450393677
+        z: 0.0
+    verts:
+    - x: 0.453121185303
+      y: 0.21439743042
+    - x: 0.250699996948
+      y: 0.732666015625
+    - x: -0.066276550293
+      y: 0.829292297363
+    - x: -0.493915557861
+      y: -0.616230010986
+    - x: -0.147733688354
+      y: -0.66720199585
+    - x: 0.20874786377
+      y: -0.406234741211
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: Station
+    pointset: tsc2015
+  node:
+    edges:
+    - action: docking
+      edge_id: Station_ChargingPoint
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: ChargingPoint
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: Station_WayPoint5
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: Station_WayPoint4
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint4
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: Station_WayPoint3
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: Station
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.85051202774
+        x: -3.8140502312e-08
+        y: -5.22184562257e-09
+        z: 0.525955557823
+      position:
+        x: -17.3675193787
+        y: 7.19530916214
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: Station2
+    pointset: tsc2015
+  node:
+    edges:
+    - action: docking
+      edge_id: Station2_ChargingPoint2
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: ChargingPoint2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: Station2_WayPoint42
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint42
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: Station2_WayPoint41
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: Station2_WayPoint40
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: Station2
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.158054560423
+        x: -7.33998888336e-08
+        y: -4.54518112036e-09
+        z: 0.9874304533
+      position:
+        x: -25.6113739014
+        y: -35.6849479675
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint1
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint1_WayPoint2
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint1_WayPoint27
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint27
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint1
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.813743
+        x: 0.0
+        y: 0.0
+        z: 0.581225
+      position:
+        x: 2.10451
+        y: 0.292736
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint10
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint10_WayPoint6
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint10_WayPoint7
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint10_WayPoint5
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint10_WayPoint9
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint10_WayPoint11
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint11
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint10_WayPoint12
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint10
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.143925
+        x: 0.0
+        y: 0.0
+        z: 0.989589
+      position:
+        x: -23.582287
+        y: 13.131848
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint11
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint11_WayPoint10
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint11_WayPoint12
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint11
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.997434
+        x: 0.0
+        y: 0.0
+        z: 0.071594
+      position:
+        x: -29.337567
+        y: 10.98343
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint12
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint12_WayPoint10
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint12_WayPoint11
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint11
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint12_WayPoint14
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint14
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint12_WayPoint15
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint12_WayPoint17
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint12
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.89754
+        x: 0.0
+        y: 0.0
+        z: -0.440933
+      position:
+        x: -26.882317
+        y: 18.445678
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint13
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint13_WayPoint17
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint13_WayPoint5
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint13_WayPoint18
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint13_WayPoint19
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint19
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint13
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.990506
+        x: 0.0
+        y: 0.0
+        z: -0.137471
+      position:
+        x: -34.386772
+        y: 9.451287
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint14
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint14_WayPoint12
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint14_WayPoint15
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint14_WayPoint17
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint14_WayPoint18
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint14
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.948646
+        x: 0.0
+        y: 0.0
+        z: -0.316341
+      position:
+        x: -32.538576
+        y: 20.364074
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint15
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint15_WayPoint12
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint15_WayPoint14
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint14
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint15_WayPoint17
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint15_WayPoint18
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint15
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.16777
+        x: 0.0
+        y: 0.0
+        z: 0.985826
+      position:
+        x: -33.18862
+        y: 18.013918
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint16
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint16_WayPoint17
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint16
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.135379
+        x: 0.0
+        y: 0.0
+        z: 0.990794
+      position:
+        x: -34.118422
+        y: 15.400959
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint17
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint17_WayPoint13
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint17_WayPoint12
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint12
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint17_WayPoint14
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint14
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint17_WayPoint15
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint17_WayPoint16
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint16
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint17_WayPoint18
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint18
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint17
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.570981
+        x: 0.0
+        y: 0.0
+        z: -0.820963
+      position:
+        x: -32.301563
+        y: 15.046251
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint18
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint18_WayPoint13
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint18_WayPoint14
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint14
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint18_WayPoint15
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint15
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint18_WayPoint17
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint17
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint18
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.158416
+        x: 0.0
+        y: 0.0
+        z: 0.987372
+      position:
+        x: -34.996586
+        y: 13.095715
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint19
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint19_WayPoint13
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint19_WayPoint20
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint20
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint19_WayPoint21
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint19
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.615418
+        x: 0.0
+        y: 0.0
+        z: -0.788201
+      position:
+        x: -39.78455
+        y: 9.238703
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint2
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint2_WayPoint1
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint2_WayPoint3
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint2
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.558777
+        x: 0.0
+        y: 0.0
+        z: -0.829318
+      position:
+        x: -9.274588
+        y: 5.22214
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint20
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint20_WayPoint19
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint19
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint20_WayPoint21
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint20
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.625585
+        x: 0.0
+        y: 0.0
+        z: -0.780156
+      position:
+        x: -38.22709
+        y: 11.685087
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint21
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint21_WayPoint19
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint19
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint21_WayPoint20
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint20
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint21_WayPoint22
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint22
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint21
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.567614
+        x: 0.0
+        y: 0.0
+        z: -0.823295
+      position:
+        x: -44.785693
+        y: 12.175805
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint22
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint22_WayPoint21
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint21
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint22_WayPoint23
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint23
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint22
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.133875
+        x: -0.0
+        y: -0.0
+        z: 0.990998
+      position:
+        x: -44.210167
+        y: 17.918371
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint23
+    pointset: tsc2015
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint23_WayPoint22
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint22
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint23_WayPoint25
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint23_WayPoint26
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint26
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint23
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.985835
+        x: 0.0
+        y: 0.0
+        z: -0.167716
+      position:
+        x: -46.078641
+        y: 18.515057
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint24
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint24_WayPoint25
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint25
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint24_WayPoint26
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint26
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint24
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.867841
+        x: 0.0
+        y: 0.0
+        z: 0.496841
+      position:
+        x: -51.018633
+        y: 13.118599
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint25
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint25_WayPoint23
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint23
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint25_WayPoint24
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint24
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint25
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.981137
+        x: 0.0
+        y: 0.0
+        z: -0.193313
+      position:
+        x: -49.064486
+        y: 19.222919
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint26
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint26_WayPoint23
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint23
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint26_WayPoint24
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint24
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint26
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.805664
+        x: 0.0
+        y: 0.0
+        z: 0.592373
+      position:
+        x: -48.065381
+        y: 12.233826
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint27
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint27_WayPoint3
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint27_WayPoint1
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint1
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint27_WayPoint28
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint28
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint27_WayPoint30
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint30
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint27
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.561236739159
+        x: 5.97969285199e-10
+        y: -9.50754497353e-09
+        z: -0.827655375004
+      position:
+        x: -6.16407203674
+        y: -1.21541595459
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint28
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint28_WayPoint29
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint29
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint28_WayPoint30
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint30
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint28_WayPoint27
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint27
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint28
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.98396
+        x: 0.0
+        y: 0.0
+        z: -0.178388
+      position:
+        x: -6.057331
+        y: -8.922171
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint29
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint29_WayPoint28
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint28
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint29_WayPoint31
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint29_WayPoint32
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint29
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.993874
+        x: -0.0
+        y: -0.0
+        z: -0.110524
+      position:
+        x: -7.311805
+        y: -12.667358
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint3
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint3_WayPoint2
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint3_WayPoint4
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint4
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint3_WayPoint27
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint27
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint3_Station
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: Station
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint3
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.133182
+        x: 0.0
+        y: 0.0
+        z: 0.991092
+      position:
+        x: -10.172308
+        y: 2.030402
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint30
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint30_WayPoint28
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint28
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint30_WayPoint31
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint30_WayPoint27
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint27
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint30
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.163465
+        x: 0.0
+        y: 0.0
+        z: 0.986549
+      position:
+        x: -10.399649
+        y: -9.313902
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint31
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint31_WayPoint29
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint29
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint31_WayPoint30
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint30
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint31_WayPoint33
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint33
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint31_WayPoint32
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint31_WayPoint35
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint31
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.139062
+        x: -0.0
+        y: 0.0
+        z: 0.990284
+      position:
+        x: -11.401709
+        y: -13.580921
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint32
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint32_WayPoint29
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint29
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint32_WayPoint31
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint32_WayPoint33
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint33
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint32_WayPoint35
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint32
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.981547
+        x: 0.0
+        y: 0.0
+        z: -0.191219
+      position:
+        x: -8.537996
+        y: -15.49056
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint33
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint33_WayPoint31
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint33_WayPoint32
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint33_WayPoint34
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint33_WayPoint35
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint33
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.165677
+        x: 0.0
+        y: 0.0
+        z: 0.98618
+      position:
+        x: -13.110647
+        y: -16.657249
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint34
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint34_WayPoint33
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint33
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint34_WayPoint35
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint34_WayPoint36
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint34
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.148899
+        x: -0.0
+        y: -0.0
+        z: 0.988853
+      position:
+        x: -14.138223
+        y: -19.908907
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint35
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint35_WayPoint32
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint32
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint35_WayPoint33
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint33
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint35_WayPoint31
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint31
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint35_WayPoint34
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint35_WayPoint36
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint35
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.576495
+        x: 0.0
+        y: 0.0
+        z: -0.817101
+      position:
+        x: -12.289884
+        y: -18.291236
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint36
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint36_WayPoint34
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint34
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint36_WayPoint35
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint35
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint36_WayPoint37
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint37
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint36
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.571191
+        x: -0.0
+        y: 0.0
+        z: -0.820817
+      position:
+        x: -14.408839
+        y: -23.303839
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint37
+    pointset: tsc2015
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint37_WayPoint36
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint36
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint37_WayPoint38
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint38
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint37
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.787836
+        x: 0.0
+        y: 0.0
+        z: 0.615886
+      position:
+        x: -14.939643
+        y: -24.938139
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint38
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint38_WayPoint37
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint37
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint38_WayPoint39
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint38
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.587344
+        x: 0.0
+        y: 0.0
+        z: -0.809337
+      position:
+        x: -17.289783
+        y: -32.454296
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint39
+    pointset: tsc2015
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint39_WayPoint38
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint38
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint39_WayPoint40
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint39_WayPoint43
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint43
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint39_WayPoint51
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint51
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint39
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.803435
+        x: 0.0
+        y: 0.0
+        z: 0.595392
+      position:
+        x: -17.570257
+        y: -33.655443
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint4
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint4_WayPoint3
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint3
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint4_Station
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: Station
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint4
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.905465602875
+        x: -3.46475514945e-09
+        y: -5.7812676868e-10
+        z: -0.424419671297
+      position:
+        x: -13.0263395309
+        y: 9.22775554657
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint40
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint40_WayPoint39
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint40_WayPoint41
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint40_WayPoint43
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint43
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint40_Station2
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: Station2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint40
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.162219
+        x: 0.0
+        y: 0.0
+        z: 0.986755
+      position:
+        x: -22.916723
+        y: -33.573498
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint41
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint41_WayPoint40
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: move_base
+      edge_id: WayPoint41_WayPoint48
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint48
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint41_Station2
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: Station2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint41
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.148531
+        x: 0.0
+        y: 0.0
+        z: 0.988908
+      position:
+        x: -25.487991
+        y: -32.781685
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint42
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint42_WayPoint45
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint45
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint42_WayPoint46
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint46
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint42_Station2
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: Station2
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint42
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.596371
+        x: 0.0
+        y: 0.0
+        z: -0.802709
+      position:
+        x: -26.702653
+        y: -39.419802
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint43
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint43_WayPoint39
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint43_WayPoint40
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint40
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint43_WayPoint44
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint44
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint43
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.989502
+        x: 0.0
+        y: 0.0
+        z: -0.144521
+      position:
+        x: -22.106636
+        y: -36.416498
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint44
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint44_WayPoint43
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint43
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint44_WayPoint45
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint45
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint44
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.982765
+        x: 0.0
+        y: 0.0
+        z: -0.184858
+      position:
+        x: -22.823514
+        y: -38.426425
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint45
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint45_WayPoint42
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint42
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint45_WayPoint44
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint44
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint45_WayPoint47
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint47
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint45
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.98883
+        x: 0.0
+        y: 0.0
+        z: -0.149046
+      position:
+        x: -23.486121
+        y: -40.439075
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint46
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint46_WayPoint47
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint47
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint46_WayPoint42
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint42
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint46
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.960304
+        x: 0.0
+        y: 0.0
+        z: 0.278954
+      position:
+        x: -29.435249
+        y: -47.301478
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint47
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint47_WayPoint46
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint46
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint47_WayPoint45
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint45
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint47
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.441196
+        x: 0.0
+        y: 0.0
+        z: 0.897411
+      position:
+        x: -26.032118
+        y: -48.112774
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint48
+    pointset: tsc2015
+  node:
+    edges:
+    - action: move_base
+      edge_id: WayPoint48_WayPoint41
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint41
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint48_WayPoint49
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint49
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint48
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.996382
+        x: 0.0
+        y: 0.0
+        z: -0.084985
+      position:
+        x: -27.481871
+        y: -32.216532
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint49
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint49_WayPoint48
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint48
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint49_WayPoint50
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint50
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint49
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.591812
+        x: 0.0
+        y: -0.0
+        z: -0.806076
+      position:
+        x: -33.507084
+        y: -30.627085
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint5
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint5_WayPoint6
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint5_WayPoint7
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint5_WayPoint8
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint8
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint5_WayPoint9
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint5_WayPoint10
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint5_WayPoint13
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint13
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint5_Station
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: Station
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint5
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.959185
+        x: 0.0
+        y: 0.0
+        z: -0.282779
+      position:
+        x: -19.528577
+        y: 8.586712
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint50
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint50_WayPoint49
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint49
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint50
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.74014
+        x: 0.0
+        y: 0.0
+        z: -0.672453
+      position:
+        x: -39.053162
+        y: -28.944979
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint51
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint51_WayPoint39
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint39
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint51_WayPoint53
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint53
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint51_WayPoint52
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint52
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint51
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.610729753971
+        x: 5.04864106077e-09
+        y: 5.18257081694e-09
+        z: -0.791839182377
+      position:
+        x: -13.3275613785
+        y: -36.9245681763
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint52
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint52_WayPoint53
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint53
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint52_WayPoint51
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint51
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint52
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.548779
+        x: 0.0
+        y: 0.0
+        z: -0.835967
+      position:
+        x: -15.689999
+        y: -41.504177
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint53
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint53_WayPoint52
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint52
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint53_WayPoint54
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint54
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint53_WayPoint51
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint51
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint53
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.782983
+        x: 0.0
+        y: 0.0
+        z: 0.622043
+      position:
+        x: -10.65784
+        y: -40.00495
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint54
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint54_WayPoint53
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint53
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint54_WayPoint55
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint54_WayPoint56
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint54_WayPoint57
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint57
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint54
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.836499
+        x: 0.0
+        y: 0.0
+        z: 0.547969
+      position:
+        x: -8.635634
+        y: -41.123872
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint55
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint55_WayPoint54
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint54
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint55_WayPoint56
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint55_WayPoint57
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint57
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint55_WayPoint62
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint62
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint55
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.979726
+        x: 0.0
+        y: 0.0
+        z: -0.200343
+      position:
+        x: -9.50954
+        y: -47.717099
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint56
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint56_WayPoint54
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint54
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint56_WayPoint55
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint56_WayPoint57
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint57
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint56_WayPoint58
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint58
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint56_WayPoint61
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint61
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint56_WayPoint62
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint62
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint56
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.919095
+        x: 0.0
+        y: 0.0
+        z: -0.394036
+      position:
+        x: -4.784935
+        y: -48.063747
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint57
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint57_WayPoint55
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint57_WayPoint54
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint54
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint57_WayPoint56
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint57_WayPoint58
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint58
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint57
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.981991
+        x: 0.0
+        y: 0.0
+        z: -0.188926
+      position:
+        x: -4.465052
+        y: -42.621579
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint58
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint58_WayPoint56
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint58_WayPoint57
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint57
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint58_WayPoint59
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint59
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint58
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.951671
+        x: 0.0
+        y: 0.0
+        z: -0.30712
+      position:
+        x: 1.091324
+        y: -44.576907
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint59
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint59_WayPoint58
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint58
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint59_WayPoint60
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint60
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint59
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.988435
+        x: 0.0
+        y: 0.0
+        z: -0.151643
+      position:
+        x: 4.631239
+        y: -47.697301
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint6
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint6_WayPoint5
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint6_WayPoint8
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint8
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint6_WayPoint9
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint6_WayPoint10
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint6
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.992698
+        x: 0.0
+        y: 0.0
+        z: -0.120628
+      position:
+        x: -16.947366
+        y: 10.506856
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint60
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint60_WayPoint59
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint59
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint60_WayPoint61
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint61
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint60
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.983689
+        x: 0.0
+        y: 0.0
+        z: -0.179876
+      position:
+        x: 2.740578
+        y: -54.199318
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint61
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint61_WayPoint56
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint61_WayPoint60
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint60
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint61_WayPoint62
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint62
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint61
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.630255
+        x: 0.0
+        y: 0.0
+        z: -0.776388
+      position:
+        x: -2.238164
+        y: -52.491864
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint62
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint62_WayPoint55
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint55
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint62_WayPoint56
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint56
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint62_WayPoint61
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint61
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint62
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.502337
+        x: 0.0
+        y: 0.0
+        z: -0.864672
+      position:
+        x: -8.841636
+        y: -49.995935
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint7
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint7_WayPoint5
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint7_WayPoint8
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint8
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint7_WayPoint9
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint7_WayPoint10
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint7
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.98528
+        x: 0.0
+        y: 0.0
+        z: -0.170946
+      position:
+        x: -16.025112
+        y: 12.985536
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint8
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint8_WayPoint6
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint8_WayPoint5
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint8_WayPoint7
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint8_WayPoint9
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint9
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint8
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.986017
+        x: 0.0
+        y: 0.0
+        z: -0.166645
+      position:
+        x: -15.793352
+        y: 15.461859
+        z: -0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0
+- meta:
+    map: tsc2015
+    node: WayPoint9
+    pointset: tsc2015
+  node:
+    edges:
+    - action: human_aware_navigation
+      edge_id: WayPoint9_WayPoint6
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint6
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint9_WayPoint7
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint7
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint9_WayPoint5
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint5
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint9_WayPoint8
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint8
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    - action: human_aware_navigation
+      edge_id: WayPoint9_WayPoint10
+      inflation_radius: 0.0
+      map_2d: tsc2015
+      node: WayPoint10
+      recovery_behaviours_config: ''
+      top_vel: 0.55
+    localise_by_topic: ''
+    map: tsc2015
+    name: WayPoint9
+    pointset: tsc2015
+    pose:
+      orientation:
+        w: 0.738619
+        x: 0.0
+        y: 0.0
+        z: -0.674123
+      position:
+        x: -20.386536
+        y: 15.577576
+        z: 0.0
+    verts:
+    - x: 0.689999997616
+      y: 0.287000000477
+    - x: 0.287000000477
+      y: 0.689999997616
+    - x: -0.287000000477
+      y: 0.689999997616
+    - x: -0.689999997616
+      y: 0.287000000477
+    - x: -0.689999997616
+      y: -0.287000000477
+    - x: -0.287000000477
+      y: -0.689999997616
+    - x: 0.287000000477
+      y: -0.689999997616
+    - x: 0.689999997616
+      y: -0.287000000477
+    xy_goal_tolerance: 0.0
+    yaw_goal_tolerance: 0.0

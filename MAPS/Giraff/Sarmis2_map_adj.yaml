@@ -1,0 +1,8 @@
+image: Sarmis2_map_adj.pgm
+resolution: 0.050000
+origin: [-9.65, -7.7, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+# -9.65  2.75 = 12.4
+# -7.7   6.05 = 13.75

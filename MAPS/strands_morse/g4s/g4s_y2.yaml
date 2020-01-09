@@ -1,0 +1,6 @@
+free_thresh: 0.196
+image: g4s_y2.pgm
+negate: 0
+occupied_thresh: 0.65
+origin: [-6.299999999999997, -6.549999999999997, 0.0]
+resolution: 0.05

@@ -1,0 +1,6 @@
+free_thresh: 0.196
+image: tsc20160523_nogo.pgm
+negate: 0
+occupied_thresh: 0.65
+origin: [-75.4, -54.449999999999996, 0.0]
+resolution: 0.05
