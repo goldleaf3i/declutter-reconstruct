@@ -1,0 +1,36 @@
+bormann: False
+cv2thresh: 150
+minVal: 30
+maxVal: 90
+apertureSize: 5
+rho: 1
+theta: 0.017453292519943295
+thresholdHough: 25
+minLineLength: 10
+maxLineGap: 5
+offset: 20
+diagonals: False
+h: 0.023
+minOffset: 1e-05
+sogliaLateraleClusterMura: 5
+th1: 0.1
+distance_extended_segment: 20
+threshold_edges: 0.1
+sigma: 0.125
+eps: 0.85
+minPts: 1
+division_threshold: 5
+filter_level: 0.18
+th_post: 750
+th_margin: 1000
+threshold_color: 200
+tab_sliding: []
+tab_comparison: [[''], ['precision_micro'], ['precision_macro'], ['recall_micro'], ['recall_macro'], ['iou_micro_mean_seg_to_gt'], ['iou_macro_seg_to_gt'], ['iou_micro_mean_gt_to_seg'], ['iou_macro_gt_to_seg']]
+total_index: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+total_index_morphological: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+total_index_distance: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+total_index_voronoi: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+comp: [0.006055498561275741, -3.1331149556040074, -1.5489965319743044, 1.5901739221909779]
+voronoi_closeness: 10
+blur: 8
+iterations: 5

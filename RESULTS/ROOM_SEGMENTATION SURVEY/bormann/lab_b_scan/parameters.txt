@@ -1,0 +1,36 @@
+bormann: True
+cv2thresh: 150
+minVal: 30
+maxVal: 90
+apertureSize: 5
+rho: 1
+theta: 0.017453292519943295
+thresholdHough: 25
+minLineLength: 10
+maxLineGap: 5
+offset: 20
+diagonals: False
+h: 0.023
+minOffset: 1e-05
+sogliaLateraleClusterMura: 5
+th1: 0.1
+distance_extended_segment: 20
+threshold_edges: 0.1
+sigma: 0.125
+eps: 0.85
+minPts: 1
+division_threshold: 5
+filter_level: 0.18
+th_post: 750
+th_margin: 1000
+threshold_color: 200
+tab_sliding: [[0.18, 0.1, 89.24053762469546, 79.5670956202755, 93.59179424570057, 93.32862175308394], [0.18, 0.1, 78.52410627395612, 63.28970680962165, 61.70380931054178, 28.568440488726687], [0.18, 0.1, 96.00821489724851, 96.1359336341144, 96.00821489724851, 96.1359336341144]]
+tab_comparison: [[''], ['precision_micro'], ['precision_macro'], ['recall_micro'], ['recall_macro'], ['iou_micro_mean_seg_to_gt'], ['iou_macro_seg_to_gt'], ['iou_micro_mean_gt_to_seg'], ['iou_macro_gt_to_seg']]
+total_index: [['map', 'office_a', 'lab_f_scan', 'office_h'], ['prec micro', 96.7669869621713, 87.1963882122613, 98.57547610493268], ['prec macro', 96.99905852816569, 67.46005785605496, 97.89181272259175], ['rec micro', 98.14443717787755, 89.77119290770499, 97.38765193510865], ['rec macro', 97.68615564281473, 91.99414715719062, 98.16838523830754], ['iou mean seg', 89.24053762469546, 78.52410627395612, 96.00821489724851], ['iou seg', 79.5670956202755, 63.28970680962165, 96.1359336341144], ['iou mean gt', 93.59179424570057, 61.70380931054178, 96.00821489724851], ['iou gt', 93.32862175308394, 28.568440488726687, 96.1359336341144]]
+total_index_morphological: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+total_index_distance: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+total_index_voronoi: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+comp: [1.5707963267948966, -1.5740250962230462, 0.0016143847140748235, 3.1399782688757183]
+voronoi_closeness: 10
+blur: 8
+iterations: 5

@@ -1,0 +1,56 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccccccc}
+\hline
+              &  geometrical  &  g\_std  &  morphological  &  m\_std  &  distance  &  d\_std  &  voronoi  &  v\_std  \\
+\hline
+ prec micro   &    93.544     &  5.363  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ prec macro   &    85.426     & 14.405  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ rec micro    &    91.027     &  3.460  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ rec macro    &    89.735     &  6.580  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ iou mean seg &    79.125     &  9.796  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ iou seg      &    65.790     & 20.883  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ iou mean gt  &    71.750     & 13.115  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ iou gt       &    53.406     & 27.724  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+\hline
+\end{tabular}
+\caption{Average results of run}
+\label{tab:Bormann_furnitures}
+\end{table}
+
+
+
+All results of run \\
+\begin{tabular}{lrrrrrrrr}
+\hline
+ map                         &   prec micro &   prec macro &   rec micro &   rec macro &   iou mean seg &   iou seg &   iou mean gt &   iou gt \\
+\hline
+ office\_c\_furnitures         &       99.524 &       99.373 &      90.933 &      90.540 &         90.568 &    90.026 &        90.568 &   90.026 \\
+ lab\_f\_scan\_furnitures       &       87.006 &       65.368 &      87.084 &      89.952 &         73.919 &    59.569 &        57.966 &   25.845 \\
+ lab\_d\_scan\_furnitures       &       94.209 &       95.206 &      92.442 &      92.328 &         66.732 &    75.683 &        71.829 &   65.432 \\
+ office\_a\_furnitures         &       96.048 &       94.138 &      92.688 &      92.561 &         84.322 &    73.340 &        84.821 &   73.809 \\
+ lab\_intel\_furnitures        &       92.368 &       66.972 &      91.491 &      80.979 &         76.557 &    39.173 &        51.777 &   16.061 \\
+ lab\_b\_scan\_furnitures       &       89.809 &       60.534 &      94.105 &      94.641 &         83.868 &    58.364 &        64.676 &   30.245 \\
+ Freiburg79\_scan\_furnitures  &       95.263 &       94.758 &      87.107 &      88.722 &         73.897 &    78.086 &        76.662 &   71.999 \\
+ lab\_c\_scan\_furnitures       &       89.387 &       51.232 &      93.787 &      94.136 &         82.144 &    49.236 &        48.028 &   16.602 \\
+ lab\_a\_scan\_furnitures       &       76.233 &       85.461 &      91.044 &      73.646 &         52.508 &    15.532 &        57.261 &   58.426 \\
+ office\_g\_furnitures         &       93.989 &       93.821 &      83.690 &      74.770 &         61.057 &    25.131 &        81.616 &   69.194 \\
+ office\_e\_furnitures         &       94.483 &       76.132 &      94.520 &      95.872 &         90.071 &    74.054 &        58.998 &   17.560 \\
+ Freiburg101\_scan\_furnitures &       98.336 &       95.468 &      98.856 &      96.785 &         84.968 &    55.726 &        68.442 &   31.574 \\
+ office\_h\_furnitures         &       99.001 &       97.944 &      85.946 &      89.162 &         85.140 &    87.524 &        85.140 &   87.524 \\
+ office\_d\_furnitures         &       91.260 &       88.434 &      91.320 &      94.356 &         83.265 &    84.332 &        61.896 &   31.164 \\
+ office\_b\_furnitures         &       95.351 &       80.568 &      91.448 &      94.381 &         86.314 &    76.534 &        77.246 &   48.355 \\
+ office\_f\_furnitures         &       97.013 &       97.701 &      90.717 &      93.103 &         88.704 &    91.266 &        84.163 &   87.987 \\
+ NLB\_furnitures              &       91.394 &       82.598 &      94.320 &      94.008 &         83.294 &    74.720 &        65.931 &   19.477 \\
+ Freiburg52\_scan\_furnitures  &       97.584 &       98.234 &      87.995 &      91.594 &         75.428 &    82.165 &        86.309 &   90.216 \\
+ office\_i\_furnitures         &       99.088 &       99.142 &      90.021 &      83.437 &         80.622 &    59.546 &        89.909 &   83.221 \\
+\hline
+\end{tabular}
+
+All results of run with bormann \\
+\begin{tabular}{}
+\hline
+ f   & i   & r   & s   & t   & r   & o   & w   \\
+\hline
+\hline
+\end{tabular}

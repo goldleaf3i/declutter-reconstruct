@@ -1,0 +1,36 @@
+bormann: False
+cv2thresh: 150
+minVal: 30
+maxVal: 90
+apertureSize: 5
+rho: 1
+theta: 0.017453292519943295
+thresholdHough: 25
+minLineLength: 10
+maxLineGap: 5
+offset: 20
+diagonals: False
+h: 0.023
+minOffset: 1e-05
+sogliaLateraleClusterMura: 5
+th1: 0.1
+distance_extended_segment: 20
+threshold_edges: 0.1
+sigma: 0.125
+eps: 0.85
+minPts: 1
+division_threshold: 5
+filter_level: 0.18
+th_post: 750
+th_margin: 1000
+threshold_color: 200
+tab_sliding: [[0.18, 0.1, 67.3211136675988, 62.7605245453973, 82.43356328563094, 78.5154934873573], [0.18, 0.1, 63.386113112891216, 59.79468707789284, 78.69382894376359, 73.20434948817058], [0.18, 0.1, 27.334850990615884, 25.520466704769518, 64.67125240422108, 58.88854235702312], [0.18, 0.1, 95.06582255749372, 92.66198887007016, 92.15365844533942, 88.06840601327708]]
+tab_comparison: [[''], ['precision_micro'], ['precision_macro'], ['recall_micro'], ['recall_macro'], ['iou_micro_mean_seg_to_gt'], ['iou_macro_seg_to_gt'], ['iou_micro_mean_gt_to_seg'], ['iou_macro_gt_to_seg']]
+total_index: [['map', 'freiburg_building79'], ['prec micro', 95.48956602022184], ['prec macro', 93.34769806758575], ['rec micro', 99.56691221548263], ['rec macro', 99.246511082444], ['iou mean seg', 95.06582255749372], ['iou seg', 92.66198887007016], ['iou mean gt', 92.15365844533942], ['iou gt', 88.06840601327708]]
+total_index_morphological: [['map', 'freiburg_building79_1 morphological'], ['prec micro', 93.70053433247944], ['prec macro', 93.45077720207254], ['rec micro', 88.9118883992124], ['rec macro', 87.74676517728001], ['iou mean seg', 67.3211136675988], ['iou seg', 62.7605245453973], ['iou mean gt', 82.43356328563094], ['iou gt', 78.5154934873573]]
+total_index_distance: [['map', 'freiburg_building79_2 distance'], ['prec micro', 96.459328532925], ['prec macro', 98.30051813471503], ['rec micro', 85.01644709571204], ['rec macro', 84.21533560064111], ['iou mean seg', 63.386113112891216], ['iou seg', 59.79468707789284], ['iou mean gt', 78.69382894376359], ['iou gt', 73.20434948817058]]
+total_index_voronoi: [['map', 'freiburg_building79_3 voronoi'], ['prec micro', 96.14359412613017], ['prec macro', 98.93264248704664], ['rec micro', 64.78608243304531], ['rec macro', 59.04968531331848], ['iou mean seg', 27.334850990615884], ['iou seg', 25.520466704769518], ['iou mean gt', 64.67125240422108], ['iou gt', 58.88854235702312]]
+comp: [1.5707963267948966, -1.5734121408278607, -0.0039237210494458274, 3.140284746573312]
+voronoi_closeness: 10
+blur: 8
+iterations: 5

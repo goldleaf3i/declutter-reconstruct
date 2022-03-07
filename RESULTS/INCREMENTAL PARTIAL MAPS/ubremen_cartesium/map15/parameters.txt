@@ -1,0 +1,36 @@
+bormann: False
+cv2thresh: 150
+minVal: 30
+maxVal: 90
+apertureSize: 5
+rho: 1
+theta: 0.017453292519943295
+thresholdHough: 25
+minLineLength: 10
+maxLineGap: 5
+offset: 20
+diagonals: False
+h: 0.023
+minOffset: 1e-05
+sogliaLateraleClusterMura: 5
+th1: 0.1
+distance_extended_segment: 20
+threshold_edges: 0.1
+sigma: 0.125
+eps: 0.85
+minPts: 1
+division_threshold: 5
+filter_level: 0.18
+th_post: 750
+th_margin: 1000
+threshold_color: 200
+tab_sliding: [[0.18, 0.1, 69.61647588501941, 59.558203289751155, 30.2372742849432, 11.78441961360111], [0.18, 0.1, 49.9907089779958, 26.742940691580575, 26.093914439667742, 11.61486047510178], [0.18, 0.1, 32.45822929899491, 13.156118367726592, 36.261378421503224, 24.104893065563083], [0.18, 0.1, 75.8010291892503, 82.43085397860006, 50.629165429997336, 33.14268283382902]]
+tab_comparison: [[''], ['precision_micro'], ['precision_macro'], ['recall_micro'], ['recall_macro'], ['iou_micro_mean_seg_to_gt'], ['iou_macro_seg_to_gt'], ['iou_micro_mean_gt_to_seg'], ['iou_macro_gt_to_seg']]
+total_index: [['map', 'map10'], ['prec micro', 82.35838037121493], ['prec macro', 85.24845646792137], ['rec micro', 94.26218576824068], ['rec macro', 96.36363636363636], ['iou mean seg', 75.8010291892503], ['iou seg', 82.43085397860006], ['iou mean gt', 50.629165429997336], ['iou gt', 33.14268283382902]]
+total_index_morphological: [['map', 'map10_1 morphological'], ['prec micro', 81.50631671694708], ['prec macro', 67.39046141915472], ['rec micro', 96.70272404395091], ['rec macro', 86.89349338634452], ['iou mean seg', 69.61647588501941], ['iou seg', 59.558203289751155], ['iou mean gt', 30.2372742849432], ['iou gt', 11.78441961360111]]
+total_index_distance: [['map', 'map10_2 distance'], ['prec micro', 83.50205519562293], ['prec macro', 66.28463626331018], ['rec micro', 95.6876068481383], ['rec macro', 79.00680480159033], ['iou mean seg', 49.9907089779958], ['iou seg', 26.742940691580575], ['iou mean gt', 26.093914439667742], ['iou gt', 11.61486047510178]]
+total_index_voronoi: [['map', 'map10_3 voronoi'], ['prec micro', 79.9496328240801], ['prec macro', 73.82781042145137], ['rec micro', 93.54807852276599], ['rec macro', 56.24665494303846], ['iou mean seg', 32.45822929899491], ['iou seg', 13.156118367726592], ['iou mean gt', 36.261378421503224], ['iou gt', 24.104893065563083]]
+comp: [0.005163696011817542, -3.134363479173248, -1.5645998915807153, 1.5749272836043513]
+voronoi_closeness: 10
+blur: 8
+iterations: 5

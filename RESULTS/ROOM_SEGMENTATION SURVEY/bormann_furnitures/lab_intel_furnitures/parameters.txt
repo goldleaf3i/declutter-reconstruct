@@ -1,0 +1,36 @@
+bormann: True
+cv2thresh: 150
+minVal: 30
+maxVal: 90
+apertureSize: 5
+rho: 1
+theta: 0.017453292519943295
+thresholdHough: 25
+minLineLength: 10
+maxLineGap: 5
+offset: 20
+diagonals: False
+h: 0.023
+minOffset: 1e-05
+sogliaLateraleClusterMura: 5
+th1: 0.1
+distance_extended_segment: 20
+threshold_edges: 0.1
+sigma: 0.125
+eps: 0.85
+minPts: 1
+division_threshold: 5
+filter_level: 0.18
+th_post: 750
+th_margin: 1000
+threshold_color: 200
+tab_sliding: [[0.18, 0.1, 90.56836353944028, 90.02572442804197, 90.56836353944028, 90.02572442804197], [0.18, 0.1, 73.91882938698856, 59.56869483074803, 57.96643375037911, 25.844878529827202], [0.18, 0.1, 66.7315364013852, 75.68301419875198, 71.82925110507598, 65.43234941613345], [0.18, 0.1, 84.32218460116829, 73.3403638281044, 84.82116625416333, 73.80866121444294]]
+tab_comparison: [[''], ['precision_micro'], ['precision_macro'], ['recall_micro'], ['recall_macro'], ['iou_micro_mean_seg_to_gt'], ['iou_macro_seg_to_gt'], ['iou_micro_mean_gt_to_seg'], ['iou_macro_gt_to_seg']]
+total_index: [['map', 'office_c_furnitures', 'lab_f_scan_furnitures', 'lab_d_scan_furnitures', 'office_a_furnitures'], ['prec micro', 99.52398171582982, 87.00578224224066, 94.20876103709124, 96.0478568469021], ['prec macro', 99.3725429272987, 65.368260717799, 95.20604540781522, 94.13795145557144], ['rec micro', 90.93250183809789, 87.08350871442627, 92.44192055648361, 92.68795745867585], ['rec macro', 90.54039176830467, 89.95158759651514, 92.32788097218372, 92.56148327477783], ['iou mean seg', 90.56836353944028, 73.91882938698856, 66.7315364013852, 84.32218460116829], ['iou seg', 90.02572442804197, 59.56869483074803, 75.68301419875198, 73.3403638281044], ['iou mean gt', 90.56836353944028, 57.96643375037911, 71.82925110507598, 84.82116625416333], ['iou gt', 90.02572442804197, 25.844878529827202, 65.43234941613345, 73.80866121444294]]
+total_index_morphological: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+total_index_distance: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+total_index_voronoi: [['map'], ['prec micro'], ['prec macro'], ['rec micro'], ['rec macro'], ['iou mean seg'], ['iou seg'], ['iou mean gt'], ['iou gt']]
+comp: [1.5707963267948966, -1.5666789052305585, 0.7884862295707018, -2.3572238455834293, -0.0020587107821690154, -3.139533942807624]
+voronoi_closeness: 10
+blur: 8
+iterations: 5

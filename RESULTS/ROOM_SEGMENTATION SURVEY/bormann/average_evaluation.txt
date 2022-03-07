@@ -1,0 +1,56 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccccccc}
+\hline
+              &  geometrical  &  g\_std  &  morphological  &  m\_std  &  distance  &  d\_std  &  voronoi  &  v\_std  \\
+\hline
+ prec micro   &    93.261     &  6.411  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ prec macro   &    86.616     & 13.344  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ rec micro    &    97.580     &  2.281  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ rec macro    &    96.313     &  4.300  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ iou mean seg &    86.226     & 10.659  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ iou seg      &    74.090     & 20.340  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ iou mean gt  &    77.383     & 17.115  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+ iou gt       &    62.245     & 29.911  &       nan       &   nan   &    nan     &   nan   &    nan    &   nan   \\
+\hline
+\end{tabular}
+\caption{Average results of run}
+\label{tab:Bormann}
+\end{table}
+
+
+
+All results of run \\
+\begin{tabular}{lrrrrrrrr}
+\hline
+ map              &   prec micro &   prec macro &   rec micro &   rec macro &   iou mean seg &   iou seg &   iou mean gt &   iou gt \\
+\hline
+ office\_a         &       96.767 &       96.999 &      98.144 &      97.686 &         89.241 &    79.567 &        93.592 &   93.329 \\
+ lab\_f\_scan       &       87.196 &       67.460 &      89.771 &      91.994 &         78.524 &    63.290 &        61.704 &   28.568 \\
+ office\_h         &       98.575 &       97.892 &      97.388 &      98.168 &         96.008 &    96.136 &        96.008 &   96.136 \\
+ lab\_b\_scan       &       90.088 &       76.089 &      98.154 &      98.656 &         88.582 &    75.385 &        76.180 &   56.927 \\
+ office\_b         &       93.479 &       78.965 &      99.121 &      99.275 &         92.466 &    78.409 &        81.171 &   49.143 \\
+ lab\_c\_scan       &       85.915 &       55.086 &      98.245 &      96.725 &         85.347 &    54.901 &        50.820 &   20.975 \\
+ office\_e         &       96.479 &       76.570 &      99.046 &      99.215 &         92.846 &    75.117 &        61.723 &   16.059 \\
+ office\_i         &       99.620 &       99.650 &      97.545 &      91.025 &         81.560 &    53.950 &        97.372 &   90.794 \\
+ lab\_a\_scan       &       74.246 &       83.681 &      95.093 &      84.810 &         56.954 &    16.858 &        58.613 &   54.933 \\
+ office\_g         &       99.656 &       99.503 &      97.632 &      88.199 &         81.590 &    58.716 &        97.371 &   87.881 \\
+ lab\_intel        &       94.565 &       62.552 &      98.912 &      99.214 &         92.403 &    62.125 &        44.619 &    9.111 \\
+ Freiburg101\_scan &       98.495 &       95.603 &      98.901 &      99.284 &         86.039 &    89.989 &        68.388 &   31.531 \\
+ Freiburg52\_scan  &       97.998 &       98.276 &      98.073 &      98.715 &         96.076 &    97.034 &        96.076 &   97.034 \\
+ office\_f         &       98.161 &       98.384 &      99.639 &      99.750 &         97.794 &    98.140 &        95.318 &   96.269 \\
+ Freiburg79\_scan  &       95.395 &       94.156 &      96.777 &      97.831 &         87.705 &    90.036 &        83.421 &   78.308 \\
+ office\_c         &       99.440 &       99.445 &      99.883 &      99.876 &         99.324 &    99.323 &        99.324 &   99.323 \\
+ lab\_d\_scan       &       87.417 &       88.163 &      96.818 &      97.274 &         62.622 &    58.100 &        63.251 &   56.226 \\
+ office\_d         &       88.413 &       90.356 &      99.831 &      99.831 &         88.192 &    90.209 &        71.223 &   73.736 \\
+ NLB              &       90.054 &       86.873 &      95.051 &      92.418 &         85.024 &    70.427 &        74.108 &   46.378 \\
+\hline
+\end{tabular}
+
+All results of run with bormann \\
+\begin{tabular}{}
+\hline
+ f   & i   & r   & s   & t   & r   & o   & w   \\
+\hline
+\hline
+\end{tabular}

@@ -1,0 +1,67 @@
+\begin{tabular}{rrrrrrrr}
+\hline
+   prec micro &   prec macro &   rec micro &   rec macro &   iou mean seg &   iou seg &   iou mean gt &   iou gt \\
+\hline
+       97.998 &       98.276 &      98.073 &      98.715 &         96.076 &    97.034 &        96.076 &   97.034 \\
+\hline
+\end{tabular}
+
+
+Evaluation from ground through to segmentation map\\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color                \\
+\hline
+       8018 &      0.838 & (81, 119, 86, 255)   \\
+       9040 &      0.874 & (195, 35, 100, 255)  \\
+       9100 &      0.995 & (91, 209, 84, 255)   \\
+       9678 &      0.965 & (68, 27, 78, 255)    \\
+      11941 &      0.998 & (80, 3, 207, 255)    \\
+      12017 &      1.000 & (169, 217, 168, 255) \\
+      15935 &      0.989 & (220, 107, 249, 255) \\
+      19455 &      0.972 & (11, 70, 107, 255)   \\
+      21259 &      0.985 & (134, 96, 63, 255)   \\
+      25955 &      0.991 & (116, 210, 98, 255)  \\
+\hline
+\end{tabular}
+
+
+Evaluation from segmentation map to ground through \\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color                \\
+\hline
+       6716 &      0.838 & (149, 180, 4, 255)   \\
+       9053 &      0.995 & (244, 31, 79, 255)   \\
+      10026 &      0.965 & (160, 76, 146, 255)  \\
+      10342 &      0.874 & (188, 68, 147, 255)  \\
+      11923 &      0.998 & (184, 73, 228, 255)  \\
+      12017 &      1.000 & (15, 212, 153, 255)  \\
+      16030 &      0.989 & (253, 159, 207, 255) \\
+      19268 &      0.972 & (243, 155, 45, 255)  \\
+      21576 &      0.985 & (110, 114, 29, 255)  \\
+      26083 &      0.991 & (173, 194, 238, 255) \\
+\hline
+\end{tabular}
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lc}
+\hline
+                          &  4 geometric  \\
+\hline
+ precision\_micro          &    97.998     \\
+ precision\_macro          &    98.276     \\
+ recall\_micro             &    98.073     \\
+ recall\_macro             &    98.715     \\
+ iou\_micro\_mean\_seg\_to\_gt &    96.076     \\
+ iou\_macro\_seg\_to\_gt      &    97.034     \\
+ iou\_micro\_mean\_gt\_to\_seg &    96.076     \\
+ iou\_macro\_gt\_to\_seg      &    97.034     \\
+\hline
+\end{tabular}
+\caption{Comparison}
+\label{tab:Freiburg52_scan}
+\end{table}
+

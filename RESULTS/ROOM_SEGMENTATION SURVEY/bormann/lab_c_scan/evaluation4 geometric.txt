@@ -1,0 +1,73 @@
+\begin{tabular}{rrrrrrrr}
+\hline
+   prec micro &   prec macro &   rec micro &   rec macro &   iou mean seg &   iou seg &   iou mean gt &   iou gt \\
+\hline
+       85.915 &       55.086 &      98.245 &      96.725 &         85.347 &    54.901 &        50.820 &   20.975 \\
+\hline
+\end{tabular}
+
+
+Evaluation from ground through to segmentation map\\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color                \\
+\hline
+       3961 &      0.990 & (210, 215, 254, 255) \\
+       4325 &      0.190 & (32, 227, 234, 255)  \\
+       5052 &      0.963 & (86, 146, 58, 255)   \\
+       5279 &      0.077 & (12, 42, 23, 255)    \\
+       5856 &      0.971 & (28, 93, 218, 255)   \\
+       5879 &      0.086 & (57, 42, 16, 255)    \\
+       5911 &      0.086 & (228, 81, 50, 255)   \\
+       5929 &      0.086 & (219, 20, 34, 255)   \\
+       6007 &      0.984 & (109, 74, 30, 255)   \\
+       6024 &      0.971 & (205, 192, 100, 255) \\
+       6059 &      0.088 & (4, 165, 232, 255)   \\
+      11059 &      0.993 & (151, 111, 211, 255) \\
+      11142 &      0.163 & (242, 209, 59, 255)  \\
+      13176 &      0.993 & (113, 9, 199, 255)   \\
+      13642 &      0.199 & (25, 188, 164, 255)  \\
+      14286 &      0.618 & (47, 31, 173, 255)   \\
+      17334 &      0.182 & (44, 125, 66, 255)   \\
+\hline
+\end{tabular}
+
+
+Evaluation from segmentation map to ground through \\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color               \\
+\hline
+       3987 &      0.990 & (9, 25, 61, 255)    \\
+       5197 &      0.963 & (250, 6, 143, 255)  \\
+       5803 &      0.971 & (243, 36, 43, 255)  \\
+       5908 &      0.984 & (65, 208, 80, 255)  \\
+       6207 &      0.971 & (243, 90, 164, 255) \\
+      11138 &      0.993 & (15, 235, 191, 255) \\
+      13105 &      0.993 & (247, 57, 225, 255) \\
+      22758 &      0.618 & (125, 101, 82, 255) \\
+      68548 &      0.199 & (187, 246, 96, 255) \\
+\hline
+\end{tabular}
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lc}
+\hline
+                          &  4 geometric  \\
+\hline
+ precision\_micro          &    85.915     \\
+ precision\_macro          &    55.086     \\
+ recall\_micro             &    98.245     \\
+ recall\_macro             &    96.725     \\
+ iou\_micro\_mean\_seg\_to\_gt &    85.347     \\
+ iou\_macro\_seg\_to\_gt      &    54.901     \\
+ iou\_micro\_mean\_gt\_to\_seg &    50.820     \\
+ iou\_macro\_gt\_to\_seg      &    20.975     \\
+\hline
+\end{tabular}
+\caption{Comparison}
+\label{tab:lab_c_scan}
+\end{table}
+

@@ -1,0 +1,65 @@
+\begin{tabular}{rrrrrrrr}
+\hline
+   prec micro &   prec macro &   rec micro &   rec macro &   iou mean seg &   iou seg &   iou mean gt &   iou gt \\
+\hline
+       98.495 &       95.603 &      98.901 &      99.284 &         86.039 &    89.989 &        68.388 &   31.531 \\
+\hline
+\end{tabular}
+
+
+Evaluation from ground through to segmentation map\\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color                \\
+\hline
+       2052 &      0.010 & (105, 232, 240, 255) \\
+       4302 &      0.021 & (62, 217, 183, 255)  \\
+       4327 &      0.022 & (80, 84, 64, 255)    \\
+       9948 &      0.998 & (214, 109, 53, 255)  \\
+      10130 &      0.993 & (175, 238, 13, 255)  \\
+      11422 &      0.972 & (1, 171, 15, 255)    \\
+      15570 &      0.998 & (26, 146, 251, 255)  \\
+      17069 &      0.983 & (210, 172, 234, 255) \\
+      17322 &      0.902 & (79, 253, 227, 255)  \\
+     189281 &      0.940 & (81, 228, 11, 255)   \\
+\hline
+\end{tabular}
+
+
+Evaluation from segmentation map to ground through \\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color                \\
+\hline
+       1718 &      0.097 & (240, 251, 99, 255)  \\
+       9972 &      0.998 & (210, 162, 165, 255) \\
+      10203 &      0.993 & (15, 249, 211, 255)  \\
+      11752 &      0.972 & (249, 55, 19, 255)   \\
+      15546 &      0.998 & (74, 34, 110, 255)   \\
+      15616 &      0.902 & (29, 207, 7, 255)    \\
+      17050 &      0.983 & (65, 31, 136, 255)   \\
+     200998 &      0.940 & (210, 136, 29, 255)  \\
+\hline
+\end{tabular}
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lc}
+\hline
+                          &  4 geometric  \\
+\hline
+ precision\_micro          &    98.495     \\
+ precision\_macro          &    95.603     \\
+ recall\_micro             &    98.901     \\
+ recall\_macro             &    99.284     \\
+ iou\_micro\_mean\_seg\_to\_gt &    86.039     \\
+ iou\_macro\_seg\_to\_gt      &    89.989     \\
+ iou\_micro\_mean\_gt\_to\_seg &    68.388     \\
+ iou\_macro\_gt\_to\_seg      &    31.531     \\
+\hline
+\end{tabular}
+\caption{Comparison}
+\label{tab:Freiburg101_scan}
+\end{table}
+

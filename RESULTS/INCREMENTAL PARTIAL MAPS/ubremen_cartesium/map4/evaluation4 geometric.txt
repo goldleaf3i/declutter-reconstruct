@@ -1,0 +1,61 @@
+\begin{tabular}{rrrrrrrr}
+\hline
+   prec micro &   prec macro &   rec micro &   rec macro &   iou mean seg &   iou seg &   iou mean gt &   iou gt \\
+\hline
+       74.393 &       76.974 &      94.942 &      96.831 &         73.569 &    75.440 &        49.772 &   53.499 \\
+\hline
+\end{tabular}
+
+
+Evaluation from ground through to segmentation map\\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color                \\
+\hline
+        206 &      0.048 & (153, 159, 213, 255) \\
+       1356 &      0.319 & (217, 47, 204, 255)  \\
+       1587 &      0.188 & (47, 185, 65, 255)   \\
+       1885 &      0.935 & (89, 156, 126, 255)  \\
+       2190 &      0.501 & (187, 185, 193, 255) \\
+       3005 &      0.637 & (167, 219, 208, 255) \\
+       6908 &      0.246 & (214, 38, 208, 255)  \\
+      17147 &      0.905 & (113, 226, 122, 255) \\
+      21441 &      0.701 & (210, 76, 50, 255)   \\
+\hline
+\end{tabular}
+
+
+Evaluation from segmentation map to ground through \\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color                \\
+\hline
+       1987 &      0.935 & (194, 30, 79, 255)   \\
+       4252 &      0.501 & (168, 91, 151, 255)  \\
+       4721 &      0.637 & (3, 100, 230, 255)   \\
+      18778 &      0.905 & (144, 104, 213, 255) \\
+      28065 &      0.701 & (216, 194, 213, 255) \\
+\hline
+\end{tabular}
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccc}
+\hline
+                          &  1 morphological  &  2 distance  &  3 voronoi  &  4 geometric  \\
+\hline
+ precision\_micro          &      19.062       &    69.458    &   78.301    &    74.393     \\
+ precision\_macro          &      37.093       &    78.475    &   78.551    &    76.974     \\
+ recall\_micro             &      100.000      &    96.886    &   88.624    &    94.942     \\
+ recall\_macro             &      100.000      &    91.329    &   64.305    &    96.831     \\
+ iou\_micro\_mean\_seg\_to\_gt &      19.062       &    53.100    &   34.071    &    73.569     \\
+ iou\_macro\_seg\_to\_gt      &      38.124       &    61.697    &   25.235    &    75.440     \\
+ iou\_micro\_mean\_gt\_to\_seg &      11.010       &    31.726    &   49.999    &    49.772     \\
+ iou\_macro\_gt\_to\_seg      &      11.010       &    27.317    &   42.953    &    53.499     \\
+\hline
+\end{tabular}
+\caption{Comparison}
+\label{tab:map4}
+\end{table}
+
