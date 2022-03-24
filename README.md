@@ -12,9 +12,14 @@ For full details refer to [the paper](https://arxiv.org/submit/4198279/).
 2. The folder `CODE` contains the source code of our method
 3. The folder `MAPFILES` contains the maps we used in our method for evaluation
 
-## Simple working exmaple
+## Simple working example
 Run the main .py file inside the CODE folder, and select the maps you want to process in the DATA folder on the prompt. 
 
 `python runME.py`
 
 If you have some doubts/bugs just write to me and I'll be happy to help.
+
+The code currently published probably needs some  code-level adjustments to fully work. I will try to refactor it and update some stuff in the next future so to make it more ready-to-use. However, it should be pretty straighforward to replicate the results obtained in the `RESULTS` folder. 
+In the meantime if you have some issue just write me and I will try promptly answer :)
+
+Thanks for your interest in our work!
