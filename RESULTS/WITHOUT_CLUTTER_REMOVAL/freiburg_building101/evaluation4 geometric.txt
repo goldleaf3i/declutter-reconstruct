@@ -1,0 +1,73 @@
+\begin{tabular}{rrrrrrrr}
+\hline
+   prec micro &   prec macro &   rec micro &   rec macro &   iou mean seg &   iou seg &   iou mean gt &   iou gt \\
+\hline
+       93.098 &       95.729 &      79.088 &      66.411 &         45.472 &    20.010 &        58.239 &   46.548 \\
+\hline
+\end{tabular}
+
+
+Evaluation from ground through to segmentation map\\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color               \\
+\hline
+        671 &      0.031 & (79, 218, 216, 255) \\
+       1276 &      0.052 & (1, 90, 52, 255)    \\
+       1395 &      0.790 & (33, 40, 196, 255)  \\
+       2440 &      0.512 & (75, 143, 142, 255) \\
+       2739 &      0.757 & (209, 95, 206, 255) \\
+       3146 &      0.939 & (88, 152, 216, 255) \\
+       5169 &      0.860 & (233, 5, 176, 255)  \\
+       5171 &      0.612 & (42, 22, 243, 255)  \\
+       5353 &      0.649 & (115, 116, 43, 255) \\
+      73498 &      0.622 & (9, 159, 141, 255)  \\
+\hline
+\end{tabular}
+
+
+Evaluation from segmentation map to ground through \\
+\begin{tabular}{rrl}
+\hline
+   len room &   iou room & color                \\
+\hline
+        915 &      0.007 & (102, 6, 65, 255)    \\
+       1277 &      0.465 & (8, 53, 156, 255)    \\
+       1284 &      0.512 & (201, 79, 168, 255)  \\
+       1568 &      0.020 & (127, 164, 27, 255)  \\
+       1765 &      0.790 & (199, 198, 33, 255)  \\
+       1899 &      0.349 & (252, 157, 49, 255)  \\
+       2120 &      0.757 & (104, 58, 236, 255)  \\
+       2283 &      0.366 & (217, 176, 224, 255) \\
+       2406 &      0.033 & (190, 185, 117, 255) \\
+       2436 &      0.033 & (225, 149, 103, 255) \\
+       3172 &      0.612 & (116, 231, 130, 255) \\
+       3225 &      0.939 & (169, 218, 62, 255)  \\
+       3476 &      0.649 & (243, 83, 25, 255)   \\
+       4460 &      0.860 & (19, 233, 130, 255)  \\
+      21701 &      0.262 & (183, 208, 116, 255) \\
+      47115 &      0.622 & (207, 68, 12, 255)   \\
+\hline
+\end{tabular}
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccc}
+\hline
+                          &  1 morphological  &  2 distance  &  3 voronoi  &  4 geometric  \\
+\hline
+ precision\_micro          &      80.954       &    90.177    &   90.995    &    93.098     \\
+ precision\_macro          &      87.659       &    91.371    &   94.000    &    95.729     \\
+ recall\_micro             &      88.592       &    84.271    &   82.468    &    79.088     \\
+ recall\_macro             &      65.695       &    92.103    &   51.593    &    66.411     \\
+ iou\_micro\_mean\_seg\_to\_gt &      55.642       &    52.387    &   44.228    &    45.472     \\
+ iou\_macro\_seg\_to\_gt      &      47.687       &    74.878    &   15.074    &    20.010     \\
+ iou\_micro\_mean\_gt\_to\_seg &      38.841       &    45.059    &   72.754    &    58.239     \\
+ iou\_macro\_gt\_to\_seg      &      21.170       &    21.593    &   45.297    &    46.548     \\
+\hline
+\end{tabular}
+\caption{Comparison}
+\label{tab:freiburg_building101}
+\end{table}
+
