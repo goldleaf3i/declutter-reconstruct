@@ -6,6 +6,13 @@ ROSE^2 is a method for RObust StructurE identification and ROom SEgmentation (\o
 This repository should be used with the code provided by [ROSE](https://github.com/tkucner/rose).
 For full details refer to [the paper](https://arxiv.org/abs/2203.03519).
 
+## New repository 
+
+We have released a new version of the code integrated with ROS here: [here](https://github.com/aislabunimi/ROSE2) 
+In the new version we have also slightly improved the code and fixed some broken dependencies. 
+If you want to use the outcome of the method for something new, use the new version of the code.
+If you want to replicate the results of the paper, us this code.
+
 ## Structure of the repository
 
 1. The folder `RESULTS` contains the results as described in our paper
@@ -26,4 +33,5 @@ Thanks for your interest in our work!
 
 ## Integration with ROS
 
-We are developing an integration of our code with ROS, so that it could be used online by a mobile robot. We plan to release it before spring 23. If you are interested in the development or in testing the results, we are happy to share with you our preliminar results.
+We are developing an integration of our code with ROS, so that it could be used online by a mobile robot.
+The first release is [here](https://github.com/aislabunimi/ROSE2) so refer to this one if you want to use the method with a robot.
