@@ -8,10 +8,10 @@ For full details refer to [the paper](https://arxiv.org/abs/2203.03519).
 
 ## New repository 
 
-We have released a new version of the code integrated with ROS [here](https://github.com/aislabunimi/ROSE2) 
+We have released a new version of the code integrated with ROS [here](https://github.com/aislabunimi/ROSE2).
 In the new version we have also slightly improved the code and fixed some broken dependencies. 
 If you want to use the outcome of the method for something new, use the new version of the code.
-If you want to replicate the results of the paper, us this code.
+If you want to replicate the results of the paper, use this code.
 
 ## Structure of the repository
 
