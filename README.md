@@ -2,7 +2,7 @@
 
 ## Introduction
 
-ROSE^2 is a method for RObust StructurE identification and ROom SEgmentation (\ours ) of 2D occupancy maps, which may be cluttered and incomplete. Our method identifies the main directions of walls and is resilient to clutter and partial observations, allowing to extract a clean, abstract geometrical  floor-plan-like description of the environment, which is used to segment, i.e., to identify rooms in, the original occupancy grid map.
+ROSE^2 is a method for RObust StructurE identification and ROom SEgmentation of 2D occupancy maps, which may be cluttered and incomplete. Our method identifies the main directions of walls and is resilient to clutter and partial observations, allowing to extract a clean, abstract geometrical  floor-plan-like description of the environment, which is used to segment, i.e., to identify rooms in, the original occupancy grid map.
 This repository should be used with the code provided by [ROSE](https://github.com/tkucner/rose).
 For full details refer to [the paper](https://arxiv.org/abs/2203.03519).
 
